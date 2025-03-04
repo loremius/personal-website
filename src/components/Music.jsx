@@ -1,7 +1,7 @@
 // @ts-check
 import { YoutubeMusic } from "@/components/Icons.jsx";
-import { getAssetImage } from "@/functions/general";
-import useSocial from "@/hooks/useSocial";
+import { getAssetImage } from "@/functions/general.js";
+import useSocial from "@/hooks/useSocial.js";
 import { IconLink } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -45,7 +45,7 @@ export default function Activity() {
 					<p className="text-sm opacity-80 line-clamp-1 w-96">{activity.assets?.large_text}</p>
 				</div>
 
-				<Link href={"https://music.youtube.com"} className="absolute top-2 right-2">
+				<Link href="https://music.youtube.com" className="absolute top-2 right-2">
 					<div className="h-9 w-9 flex items-center border border-white/5 justify-center bg-zinc-900/30 hover:bg-zinc-900/40 text-white/70 hover:text-white cursor-pointer backdrop-blur-md rounded-full shadow-inner dark:shadow-black/10 relative transition-all ">
 						<IconLink size={16} />
 					</div>

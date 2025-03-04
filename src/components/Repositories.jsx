@@ -4,6 +4,7 @@ import { IconGitCompare, IconGitFork, IconStarFilled } from "@tabler/icons-react
 import dayjs from "dayjs";
 import duration from "dayjs/plugin/duration";
 import relativeTime from "dayjs/plugin/relativeTime";
+import { Loader } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -11,14 +12,19 @@ dayjs.extend(duration);
 dayjs.extend(relativeTime);
 
 export default function Repositories() {
-	const { data } = useSocial();
-	const starredRepos = (data?.github?.repositories ?? []).sort((a, b) => b.stargazers_count - a.stargazers_count).slice(0, 4);
+	const { data, isPending } = useSocial();
+	const starredRepos = (data?.github?.repositories ?? []).filter((val) => val.pinned).sort((a, b) => b.stargazers_count - a.stargazers_count).slice(0, 4);
 
 	return (
 		<div className="mt-20">
 			<h2 className="text-3xl font-semibold">Repositories</h2>
 			<p className="text-sm text-[#a1a1aa] mb-4">Here are some projects that are masterpieces</p>
 
+			{isPending && (
+					<div className="flex items-center justify-center">
+						<Loader className="animate-spin" size={16} />
+					</div>
+				)}
 			<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 				{starredRepos?.map((repository) => (
 					<React.Fragment key={repository.id}>
@@ -32,7 +38,7 @@ export default function Repositories() {
 
 /**
  *
- * @param {{ repository: import("@/jsdoc").GitHubRepository }} param0
+ * @param {{ repository: import("@/jsdoc").GitHubRepository; }} param0
  * @returns
  */
 function Repository({ repository }) {
@@ -66,7 +72,7 @@ function Repository({ repository }) {
 						</div>
 
 						<div className="flex gap-x-1 items-center text-zinc-500/50 text-xs">
-							<IconGitCompare size={14} stroke={2} />	{dayjs.duration(repository.pushed_at).humanize(true)}
+							<IconGitCompare size={14} stroke={2} />	{dayjs.duration(repository.updated_at).humanize(true)}
 						</div>
 					</div>
 				</div>

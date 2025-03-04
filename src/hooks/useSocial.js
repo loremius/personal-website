@@ -35,8 +35,6 @@ export default function useSocial() {
 
 			setData({ discord, github });
 			setPending(false);
-
-			localStorage.setItem("cache", JSON.stringify({ discord, github }));
 		};
 		fetchData();
 	}, []);

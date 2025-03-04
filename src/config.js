@@ -26,7 +26,7 @@ const config = {
 		id: "341585045397438464",
 	},
 	github: {
-		username: "ryokacchi",
+		username: "Ryokacchi",
 	},
 	technologies: [
 		{ id: "Typescript", icon: <TypeScript className="rounded" />, color: "49, 120, 198" },

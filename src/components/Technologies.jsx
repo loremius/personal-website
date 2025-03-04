@@ -3,7 +3,7 @@ import config from "@/config.js";
 
 export default function Technologies() {
 	return (
-		<div className="mt-20 pb-20">
+		<div className="mt-20 pb-10">
 			<h2 className="text-3xl font-semibold">Technologies</h2>
 			<p className="text-sm text-[#a1a1aa] mb-5">Here are a few technologies I use in web development and backend development.</p>
 
