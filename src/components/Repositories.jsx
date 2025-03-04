@@ -1,15 +1,10 @@
 // @ts-check
 import useSocial from "@/hooks/useSocial";
 import { IconGitCompare, IconGitFork, IconStarFilled } from "@tabler/icons-react";
-import dayjs from "dayjs";
-import duration from "dayjs/plugin/duration";
-import relativeTime from "dayjs/plugin/relativeTime";
 import { Loader } from "lucide-react";
+import moment from "moment";
 import Link from "next/link";
 import React from "react";
-
-dayjs.extend(duration);
-dayjs.extend(relativeTime);
 
 export default function Repositories() {
 	const { data, isPending } = useSocial();
@@ -72,7 +67,7 @@ function Repository({ repository }) {
 						</div>
 
 						<div className="flex gap-x-1 items-center text-zinc-500/50 text-xs">
-							<IconGitCompare size={14} stroke={2} />	{dayjs.duration(repository.updated_at).humanize(true)}
+							<IconGitCompare size={14} stroke={2} />	{moment(repository.updated_at).fromNow()}
 						</div>
 					</div>
 				</div>

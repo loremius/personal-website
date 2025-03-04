@@ -28,6 +28,9 @@ const config = {
 	github: {
 		username: "Ryokacchi",
 	},
+	myanimelist: {
+		username: "Ryokacchi",
+	},
 	technologies: [
 		{ id: "Typescript", icon: <TypeScript className="rounded" />, color: "49, 120, 198" },
 		{ id: "Javascript", icon: <JavaScript className="rounded" />, color: "240, 219, 79" },

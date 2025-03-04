@@ -15,7 +15,7 @@ export default function Activity() {
 
 	const activities = (data?.discord?.activities ?? []).filter((val) => typeof val.application_id === "string");
 	const activity = activities.find((val) => val.application_id === apps.youtube);
-	if (!(activity && typeof activity === "object")) return null;
+	if (!(activity && typeof activity === "object" && typeof activity?.timestamps?.end === "number")) return null;
 
 	return (
 		<div className="mt-3">
