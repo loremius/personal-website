@@ -16,7 +16,7 @@ export const metadata = {
 		locale: "en_US",
 		images: {
 			url: "/favicon.ico",
-			alt: `${config.github.username} — Self-Taught Developer`
+			alt: `${config.github.username} — Self-Taught Developer`,
 		},
 		type: "website",
 	},
@@ -24,8 +24,8 @@ export const metadata = {
 
 /** @type {import("next").Viewport} */
 export const viewport = {
-  themeColor: "#0c0c0e",
-}
+	themeColor: "#0c0c0e",
+};
 
 const InterFont = Inter({
 	subsets: ["latin"],
