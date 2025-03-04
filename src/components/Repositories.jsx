@@ -21,10 +21,10 @@ export default function Repositories() {
 			<p className="text-sm text-[#a1a1aa] mb-4">Here are some projects that are masterpieces</p>
 
 			{isPending && (
-					<div className="flex items-center justify-center">
-						<Loader className="animate-spin" size={16} />
-					</div>
-				)}
+				<div className="flex items-center justify-center">
+					<Loader className="animate-spin" size={16} />
+				</div>
+			)}
 			<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 				{starredRepos?.map((repository) => (
 					<React.Fragment key={repository.id}>

@@ -24,7 +24,7 @@ export const metadata = {
 
 /** @type {import("next").Viewport} */
 export const viewport = {
-	themeColor: "#0c0c0e",
+	themeColor: "#231434",
 };
 
 const InterFont = Inter({

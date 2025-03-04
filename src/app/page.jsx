@@ -1,13 +1,13 @@
 // @ts-check
 "use client";
-import Backdrop from "@/components/Backdrop";
-import Header from "@/components/Header";
-import Activity from "@/components/Music";
-import Repositories from "@/components/Repositories";
+import Backdrop from "@/components/Backdrop.jsx";
+import Header from "@/components/Header.jsx";
+import Activity from "@/components/Music.jsx";
+import Repositories from "@/components/Repositories.jsx";
 import SplashScreen from "@/components/SplashScreen.jsx";
-import Technologies from "@/components/Technologies";
-import config from "@/config";
-import { stringify } from "@/functions/general";
+import Technologies from "@/components/Technologies.jsx";
+import config from "@/config.js";
+import { stringify } from "@/functions/general.js";
 import useSocial from "@/hooks/useSocial.js";
 import React from "react";
 

@@ -13,9 +13,9 @@ export function getAssetImage(activity) {
 };
 
 /**
- * 
- * @param {string} text 
- * @returns 
+ *
+ * @param {string} text
+ * @returns
  */
 export function stringify(text) {
 	const regex = /\*\*(.*?)\*\*/g;
@@ -23,7 +23,7 @@ export function stringify(text) {
 		if (index % 2 === 1) {
 			return <span key={index} className="underline text-white font-semibold" style={{ textDecoration: "underline" }}>{part}</span>;
 		}
-		
+
 		return part;
 	});
 };
