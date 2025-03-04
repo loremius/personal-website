@@ -1,4 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+bun.lockb
 
 # dependencies
 /node_modules
@@ -12,8 +13,6 @@
 # next.js
 /.next/
 /out/
-pnpm-lock.yaml
-.env
 
 # production
 /build
