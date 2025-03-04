@@ -4,7 +4,7 @@
 
 @layer base {
   html, body {
-    @apply h-full bg-[#09090b] text-[#fafafa] 
+    @apply h-full bg-[#09090b] text-[#fafafa] select-none
   }
 }
 
