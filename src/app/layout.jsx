@@ -42,7 +42,7 @@ export default function Layout({ children }) {
 							{children}
 						</div>
 					</div>
-					<div className="pointer-events-none bg-white dark:bg-black fixed bottom-0 left-0 h-28 [mask-image:linear-gradient(transparent,#000000)] w-full" />
+					<div className="pointer-events-none bg-black fixed bottom-0 left-0 h-28 [mask-image:linear-gradient(transparent,#000000)] w-full" />
 				</Providers>
 			</body>
 		</html>
