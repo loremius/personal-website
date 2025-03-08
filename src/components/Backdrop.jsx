@@ -4,10 +4,10 @@ export default function Backdrop() {
 	return (
 		<div className="fixed inset-0 mx-0 max-w-none overflow-hidden hidden md:block">
 			<div className="absolute left-1/2 top-[-14.5px] ml-[-41.5rem] h-[25rem] w-[80rem] [mask-image:linear-gradient(white,transparent)]">
-				<div className="absolute inset-0 bg-gradient-to-r [mask-image:radial-gradient(farthest-side_at_top,white,transparent)] from-purple-500/30 to-purple-800/30 opacity-100">
+				<div className="absolute inset-0 bg-gradient-to-r  [mask-image:radial-gradient(farthest-side_at_top,white,transparent)] from-purple-500/30 to-purple-800/30 opacity-100">
 					<svg
 						aria-hidden="true"
-						className="absolute -inset-y-1/2 inset-x-0 h-[200%] w-full skew-x-[18deg] stroke-transparent mix-blend-overlay fill-black/20"
+						className="absolute -inset-y-1/2 inset-x-0 h-[200%] w-full skew-x-[18deg]  stroke-transparent mix-blend-overlay fill-black/20"
 					>
 						<defs>
 							<pattern
@@ -40,4 +40,3 @@ export default function Backdrop() {
 		</div>
 	);
 }
-
