@@ -20,6 +20,10 @@ import {
 const config = {
 	badge: "Full-Stack Developer",
 	biography: "Hi 👋🏻, I'm currently working at **@Haber**, a company",
+	popup: {
+		title: "v3.0.0 is here",
+		description: "Source code of the 3rd version of my personal website",
+	},
 	description:
 		"I specialize in **Typescript**, **Discord bot development**, and **web development** to create seamless user experiences and powerful automation tools. I also enjoy exploring the latest technologies and sharing knowledge with the community.",
 	discord: {

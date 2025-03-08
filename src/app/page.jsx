@@ -3,6 +3,7 @@
 import Backdrop from "@/components/Backdrop.jsx";
 import Header from "@/components/Header.jsx";
 import Activity from "@/components/Music.jsx";
+import Popup from "@/components/Popup";
 import Repositories from "@/components/Repositories.jsx";
 import SplashScreen from "@/components/SplashScreen.jsx";
 import Technologies from "@/components/Technologies.jsx";
@@ -19,6 +20,7 @@ export default function Page() {
 		<React.Fragment>
 			<Backdrop />
 			<Header />
+			<Popup title="v3.0.0 is here" description="Source code of the 3rd version of my personal website" iconName="sparkles" />
 
 			<div className="mx-auto w-full max-w-4xl lg:px-8 mt-20 relative">
 				<h2 className="text-4xl font-semibold">{data?.discord?.discord_user.global_name}</h2>

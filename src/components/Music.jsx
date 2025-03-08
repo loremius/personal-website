@@ -20,7 +20,7 @@ export default function Activity() {
 	return (
 		<div className="mt-3">
 			<div className="text-xs mb-2 flex items-center gap-x-1">
-				<YoutubeMusic height={12} width={12} /> {activity.name}
+				<YoutubeMusic height={13} width={13} /> {activity.name}
 				{activities.length >= 2 && ` and +${activities.length - 1} more`}
 			</div>
 			<div className="relative flex items-start gap-4 rounded-lg p-2 overflow-hidden">
@@ -46,7 +46,7 @@ export default function Activity() {
 				</div>
 
 				<Link href="https://music.youtube.com" className="absolute top-2 right-2">
-					<div className="h-9 w-9 flex items-center border border-white/5 justify-center bg-zinc-900/30 hover:bg-zinc-900/40 text-white/70 hover:text-white cursor-pointer backdrop-blur-md rounded-full shadow-inner dark:shadow-black/10 relative transition-all ">
+					<div className="h-9 w-9 flex items-center border border-white/5 justify-center bg-zinc-900/30 hover:bg-zinc-900/40 text-white/70 hover:text-white cursor-pointer backdrop-blur-md rounded-full shadow-inner shadow-black/10 relative transition-all ">
 						<IconLink size={16} />
 					</div>
 				</Link>

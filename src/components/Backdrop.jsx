@@ -3,11 +3,11 @@
 export default function Backdrop() {
 	return (
 		<div className="fixed inset-0 mx-0 max-w-none overflow-hidden hidden md:block">
-			<div className="absolute left-1/2 top-[-14.5px] ml-[-41.5rem] h-[25rem] w-[80rem] dark:[mask-image:linear-gradient(white,transparent)]">
-				<div className="absolute inset-0 bg-gradient-to-r opacity-40 [mask-image:radial-gradient(farthest-side_at_top,white,transparent)] dark:from-purple-500/30 dark:to-purple-800/30 dark:opacity-100">
+			<div className="absolute left-1/2 top-[-14.5px] ml-[-41.5rem] h-[25rem] w-[80rem] [mask-image:linear-gradient(white,transparent)]">
+				<div className="absolute inset-0 bg-gradient-to-r [mask-image:radial-gradient(farthest-side_at_top,white,transparent)] from-purple-500/30 to-purple-800/30 opacity-100">
 					<svg
 						aria-hidden="true"
-						className="absolute -inset-y-1/2 inset-x-0 h-[200%] w-full skew-x-[18deg] fill-white/10 stroke-transparent mix-blend-overlay dark:fill-black/20"
+						className="absolute -inset-y-1/2 inset-x-0 h-[200%] w-full skew-x-[18deg] stroke-transparent mix-blend-overlay fill-black/20"
 					>
 						<defs>
 							<pattern
@@ -32,7 +32,7 @@ export default function Backdrop() {
 				<svg
 					viewBox="0 0 1113 440"
 					aria-hidden="true"
-					className="absolute left-1/2 top-0 ml-[-19rem] w-[69.5625rem] fill-white dark:fill-zinc-950 blur-[26px]"
+					className="absolute left-1/2 top-0 ml-[-19rem] w-[69.5625rem] fill-zinc-950 blur-[26px]"
 				>
 					<path d="M.016 439.5s-9.5-300 434-300S882.516 20 882.516 20V0h230.004v439.5H.016Z" />
 				</svg>
