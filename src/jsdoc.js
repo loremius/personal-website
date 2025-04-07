@@ -107,7 +107,7 @@
  * @property {string} discriminator
  * @property {boolean} bot
  * @property {string} avatar
- * @property {Object=} avatar_decoration_data
+ * @property {{ sku_id: string; asset: string; expires_at: string; }} avatar_decoration_data
  * @property {string} avatar_decoration_data.sku_id
  * @property {string} avatar_decoration_data.asset
  * @property {number} avatar_decoration_data.expires_at
