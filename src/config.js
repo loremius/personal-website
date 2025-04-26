@@ -50,7 +50,6 @@ const config = {
 		{ id: "Bun", icon: <Bun className="rounded" />, color: "251, 240, 223" },
 		{ id: "Git", icon: <Git className="rounded" />, color: "222, 76, 54" },
 		{ id: "Github", icon: <Github className="rounded" />, color: "255, 255, 255" },
-		{ id: "Code", icon: <VisualStudioCode className="rounded" />, color: "34, 167, 242" },
 	],
 };
 
