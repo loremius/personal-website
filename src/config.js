@@ -19,7 +19,7 @@ import {
 
 const config = {
 	badge: "Full-Stack Developer",
-	biography: "Hi 👋🏻, I'm currently working at **@Haber**, a company",
+	biography: "Hi 👋🏻, I'm **Lore**",
 	popup: {
 		title: "v3.0.0 is here",
 		description: "Source code of the 3rd version of my personal website",
@@ -27,13 +27,10 @@ const config = {
 	description:
 		"I specialize in **Typescript**, **Discord bot development**, and **web development** to create seamless user experiences and powerful automation tools. I also enjoy exploring the latest technologies and sharing knowledge with the community.",
 	discord: {
-		id: "341585045397438464",
+		id: "1384283663302267014",
 	},
 	github: {
-		username: "Ryokacchi",
-	},
-	myanimelist: {
-		username: "Ryokacchi",
+		username: "loremius",	
 	},
 	technologies: [
 		{ id: "Typescript", icon: <TypeScript className="rounded" />, color: "49, 120, 198" },
