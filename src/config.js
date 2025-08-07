@@ -31,6 +31,10 @@ const config = {
 	},
 	github: {
 		username: "loremius",	
+	
+        },
+	myanimelist: {
+		username: "lore",
 	},
 	technologies: [
 		{ id: "Typescript", icon: <TypeScript className="rounded" />, color: "49, 120, 198" },
