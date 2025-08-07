@@ -2,7 +2,7 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
-      "name": "ryokacchi.me",
+      "name": "lore",
       "dependencies": {
         "@studio-freight/react-lenis": "^0.0.47",
         "@tabler/icons-react": "^3.30.0",
